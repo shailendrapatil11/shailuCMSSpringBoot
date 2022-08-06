@@ -1,2 +1,2 @@
 # shailuCMSSpringBoot
-this is spring boot and mysql based mini CMS system project
+This is spring boot (REST API) and mysql based mini CMS system project
