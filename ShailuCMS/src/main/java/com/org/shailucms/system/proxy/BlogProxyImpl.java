@@ -10,16 +10,16 @@ import com.org.shailucms.system.model.Blog;
 
 @Service
 public class BlogProxyImpl implements BlogProxy {
-	
+
 	@Autowired
 	private BlogDao blogDao;
 
 	@Override
 	public Blog proxyAddNewPost(Blog blog) {
-		if(blog != null) {
+		if (blog != null) {
 			blogDao.save(blog);
 		}
-		
+
 		return blog;
 	}
 
@@ -41,7 +41,5 @@ public class BlogProxyImpl implements BlogProxy {
 		blogDao.deleteById(id);
 		return byId;
 	}
-	
-	
 
 }

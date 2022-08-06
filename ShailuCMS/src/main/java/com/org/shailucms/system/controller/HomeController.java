@@ -47,7 +47,7 @@ public class HomeController {
 		Blog updateBlog = blogService.updateBlog(blog);
 		return updateBlog;
 	}
-	
+
 	@DeleteMapping("/blog/{id}")
 	public Blog deleteBlog(@PathVariable Integer id) {
 		Blog deleteBlogPost = blogService.deleteBlogPost(id);

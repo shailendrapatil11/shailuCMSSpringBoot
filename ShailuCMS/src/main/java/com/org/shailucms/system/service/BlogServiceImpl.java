@@ -8,10 +8,9 @@ import org.springframework.stereotype.Service;
 import com.org.shailucms.system.model.Blog;
 import com.org.shailucms.system.proxy.BlogProxy;
 
-
 @Service
 public class BlogServiceImpl implements BlogService {
-	
+
 	@Autowired
 	private BlogProxy blogProxy;
 
